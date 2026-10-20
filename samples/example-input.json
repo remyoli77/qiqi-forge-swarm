@@ -1,0 +1,15 @@
+{
+  "__sample__": "示例输入 —— 仅用于 selftest / 演示，query 与 skill_catalog 均为虚构，不是真实生产数据",
+  "__usage__": "python3 scripts/swarmflow.py run --input samples/example-input.json",
+  "query": "分析这份研究报告，然后总结成日报",
+  "max_subtasks": 6,
+  "skill_catalog": [
+    {"name": "web-search", "description": "联网搜索网页与新闻资讯", "tags": ["搜索", "检索", "新闻", "收集"], "category": "search"},
+    {"name": "data-analysis", "description": "整理数据并分析趋势与统计指标", "tags": ["分析", "整理", "统计", "趋势"], "category": "data"},
+    {"name": "report-writer", "description": "总结素材并撰写日报周报", "tags": ["总结", "报告", "日报", "输出"], "category": "document"},
+    {"name": "doc-reader", "description": "读取文档并提取关键资料", "tags": ["文档", "读取", "提取", "资料"], "category": "document"},
+    {"name": "chart-gen", "description": "生成流程图与数据表格", "tags": ["图表", "表格", "流程图", "生成"], "category": "image"},
+    {"name": "backup-upload", "description": "备份文件并上传到云盘", "tags": ["备份", "上传", "同步"], "category": "data"}
+  ],
+  "__skill_catalog_note__": "原件用 numpy+sklearn(TfidfVectorizer)+jieba 自建索引；本骨架不引入三方库，改由调用方提供 catalog"
+}

@@ -1,0 +1,8 @@
+# dependencies.yaml — Swarm Skill 启动依赖检查
+# Stage 2 本地扫描结果：各角色均为确定性脚本/纯推理，所需工具仅 python3（本地已确认存在）；
+# 无外部 Skill 依赖（skills 为空是扫描确认后的结论，不是没查）。
+skills: []
+tools:
+  - name: python3
+    required: true
+    purpose: 运行 scripts/swarmflow.py 编排脚本与各阶段确定性脚本
